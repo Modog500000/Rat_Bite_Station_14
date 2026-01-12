@@ -777,6 +777,7 @@
     makeSentient: true
     allowSpeech: true
     allowMovement: true
+    allowPerma: true
     name: ghost-role-information-mothroach-name
     description: ghost-role-information-mothroach-description
     rules: ghost-role-information-freeagent-rules
@@ -2048,6 +2049,7 @@
     prototype: Mouse
   - type: GhostRole
     makeSentient: true
+    allowPerma: true
     allowSpeech: true
     allowMovement: true
     name: ghost-role-information-mouse-name
@@ -2990,6 +2992,7 @@
       task: SimpleHostileCompound
   - type: GhostRole
     makeSentient: true
+    allowPerma: true
     name: ghost-role-information-giant-spider-name
     description: ghost-role-information-giant-spider-description
     rules: ghost-role-information-giant-spider-rules
@@ -3867,6 +3870,7 @@
     makeSentient: true
     allowSpeech: true
     allowMovement: true
+    allowPerma: true
     name: ghost-role-information-hamster-name
     description: ghost-role-information-hamster-description
     rules: ghost-role-information-nonantagonist-rules

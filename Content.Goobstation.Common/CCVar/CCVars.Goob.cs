@@ -420,7 +420,7 @@ public sealed partial class GoobCVars
     /// Shove range multiplier.
     /// </summary>
     public static readonly CVarDef<float> ShoveRange =
-        CVarDef.Create("game.shove_range", 0.6f, CVar.SERVER | CVar.ARCHIVE);
+        CVarDef.Create("game.shove_range", 2.5f, CVar.SERVER | CVar.ARCHIVE);
 
     /// <summary>
     /// Shove speed multiplier, does not affect range.
@@ -453,7 +453,7 @@ public sealed partial class GoobCVars
     /// Set to true to enable voice barks and disable default speech sounds.
     /// </summary>
     public static readonly CVarDef<bool> BarksEnabled =
-        CVarDef.Create("voice.barks_enabled", false, CVar.SERVER | CVar.REPLICATED | CVar.ARCHIVE);
+        CVarDef.Create("voice.barks_enabled", true, CVar.SERVER | CVar.REPLICATED | CVar.ARCHIVE);
 
     /// <summary>
     /// Client volume setting for barks.

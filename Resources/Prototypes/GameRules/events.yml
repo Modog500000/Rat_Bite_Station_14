@@ -146,6 +146,32 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
+#Ratbite
+- type: entityTable
+  id: CalmerAntagTable #Used for SqueakRat, holds ghostrole antags for now
+  table: !type:AllSelector
+    children:
+    - id: ClosetSkeleton
+    - id: KingRatMigration
+    - id: ParadoxCloneSpawn
+    - id: DerelictCyborgSpawn
+    - id: LoneAbductorSpawn
+    - id: DuoAbductorSpawn
+    - id: BingleSpawn
+
+- type: entityTable
+  id: HeavierAntagTable #Used for SqueakRat, holds round changing antags
+  table: !type:AllSelector
+    children:
+    - id: ZombieOutbreak
+    - id: SleeperAgents
+    - id: HereticMidround #We should work on a better solution to adding heretics to squeakrat, HereticMidround does exsist.
+    - id: LoneOpsSpawn
+    - id: DragonSpawn
+    - id: NinjaSpawn
+
+# Ratbite Over
+
 - type: entityTable
   id: BasicCalmEventsTable
   table: !type:AllSelector # we need to pass a list of rules, since rules have further restrictions to consider via StationEventComp
