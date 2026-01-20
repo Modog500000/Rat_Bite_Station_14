@@ -78,15 +78,13 @@
 
 - type: job # goob edit
   id: Passenger
-  name: job-name-passenger
+  name: Passenger
   description: job-description-passenger
   playTimeTracker: JobPassenger
   startingGear: PassengerGear
   icon: "JobIconPassenger"
   supervisors: job-supervisors-everyone
   goobcoins: 20 #Goob content
-  access:
-  - Maintenance
   special: # Goobstation
   - !type:AddComponentSpecial
     components:

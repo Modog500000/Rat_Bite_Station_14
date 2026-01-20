@@ -1666,6 +1666,8 @@
       shader: unshaded
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: AccessReader
+    access: [["Maintenance"]]
   - type: PointLight
     radius: 2
     energy: 1.6

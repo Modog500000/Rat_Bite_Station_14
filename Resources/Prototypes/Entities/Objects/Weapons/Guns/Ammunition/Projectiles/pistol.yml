@@ -36,7 +36,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 16
+        Piercing: 20 #Ratbite balance
 
 - type: entity
   id: BulletPistolPractice
@@ -58,8 +58,8 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 2
-        Heat: 2
+        Blunt: 5 #Ratbite balance
+        Heat: 5 #Ratbite balance
 
 - type: entity
   id: BulletPistolUranium
@@ -70,5 +70,5 @@
   - type: Projectile
     damage:
       types:
-        Radiation: 6
-        Piercing: 10
+        Radiation: 10 #Ratbite balance
+        Piercing: 15 #Ratbite balance

@@ -41,7 +41,7 @@
       coefficients:
         Blunt: 0.5
         Slash: 0.5
-        Piercing: 0.3
+        Piercing: 0.4
         Heat: 0.3
   - type: ExplosionResistance
     damageCoefficient: 0.9
@@ -69,7 +69,7 @@
       coefficients:
         Blunt: 0.5
         Slash: 0.5
-        Piercing: 0.3
+        Piercing: 0.4
         Heat: 0.3
   - type: ExplosionResistance
     damageCoefficient: 0.9
@@ -158,7 +158,7 @@
       coefficients:
         Blunt: 0.4
         Slash: 0.4
-        Piercing: 0.5
+        Piercing: 0.4 # Ratbite balance
         Heat: 0.4
         Caustic: 0.65
   - type: ToggleableClothing

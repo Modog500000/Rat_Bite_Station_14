@@ -47,7 +47,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 35
+        Piercing: 45 #Ratbite balance
 
 - type: entity
   id: BulletMagnumPractice
@@ -69,8 +69,8 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 7
-        Heat: 7
+        Blunt: 14 #Ratbite balance
+        Heat: 14 #Ratbite balance
 
 - type: entity
   id: BulletMagnumAP
@@ -81,7 +81,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 28 # Goobstation edit
+        Piercing: 40 #Ratbite balance
       armorPenetration: 0.75 # Goobstation
 
 - type: entity
@@ -93,5 +93,5 @@
   - type: Projectile
     damage:
       types:
-        Radiation: 15
-        Piercing: 20
+        Radiation: 20 #Ratbite balance
+        Piercing: 30 #Ratbite balance

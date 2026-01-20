@@ -135,15 +135,9 @@
   description: job-description-warden
   playTimeTracker: JobWarden
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobSecurityOfficer
-      time: 18000 #5 hrs
-    - !type:RoleTimeRequirement
-      role: JobBrigmedic
-      time: 18000 #5 hrs
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 36000 # 10 hrs
+      time: 14400 # 4 hrs
     - !type:SpeciesRequirement # Goob - None Felinid
       inverted: true
       species:

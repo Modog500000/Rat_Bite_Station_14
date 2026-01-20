@@ -101,7 +101,7 @@
   playTimeTracker: JobSecurityCadet
   requirements:
     - !type:OverallPlaytimeRequirement
-      time: 36000 #10 hrs
+      time: 1800 #30 mins
     - !type:DepartmentTimeRequirement
       department: Security
       time: 36000 #10 hrs

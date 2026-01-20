@@ -119,11 +119,6 @@
   setPreference: true
   objective: roles-antag-nuclear-operative-agent-objective
   requirements:
-  - !type:OverallPlaytimeRequirement
-    time: 90000 # 25 hours - Goobstation
-  - !type:DepartmentTimeRequirement
-    department: Security
-    time: 36000 # 10h Goobstation
   - !type:RoleTimeRequirement
     role: JobChemist
     time: 18000 # 5h Goobstation

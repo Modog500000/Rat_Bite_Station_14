@@ -40,7 +40,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 19
+        Piercing: 30 #Ratbite balance
       armorPenetration: 0.4 # Goobstation
 
 - type: entity
@@ -63,8 +63,8 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 4
-        Heat: 4
+        Blunt: 8 #Ratbite balance
+        Heat: 8 #Ratbite balance
 
 - type: entity
   id: BulletLightRifleUranium
@@ -75,5 +75,5 @@
   - type: Projectile
     damage:
       types:
-        Radiation: 10
-        Piercing: 11
+        Radiation: 13 #Ratbite balance
+        Piercing: 25 #Ratbite balance

@@ -121,7 +121,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 40
+        Piercing: 60 #Ratbite balance
         Structural: 15
 
 
@@ -137,7 +137,7 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 10
+        Blunt: 20 #Ratbite balance
   - type: StaminaDamageOnCollide
     damage: 60 # Goob edit
 
@@ -153,7 +153,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 10
+        Piercing: 15 #Ratbite balance
         Structural: 15
 
 
@@ -164,7 +164,7 @@
   components:
   - type: ProjectileSpread
     proto: PelletShotgun
-    count: 6
+    count: 10 #Ratbite balance
     spread: 15
 
 - type: entity
@@ -230,8 +230,8 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 3
-        Slash: 3
+        Piercing: 5 #Ratbite balance
+        Slash: 5 #Ratbite balance
 
 - type: entity
   id: PelletShotgunImprovisedSpread
@@ -329,8 +329,8 @@
   - type: Projectile
     damage:
       types:
-        Radiation: 5
-        Piercing: 5
+        Radiation: 8 #Ratbite balance
+        Piercing: 8 #Ratbite balance
 
 - type: entity
   id: PelletShotgunUraniumSpread
@@ -357,7 +357,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 25
+        Piercing: 35 #Ratbite balance
         Structural: 5
 
 - type: entity
@@ -388,7 +388,7 @@
     deleteOnCollide: false
     damage:
       types:
-        Slash: 25
+        Slash: 30 #Ratbite balance
 
 - type: entity
   id: PelletGlassSpread
