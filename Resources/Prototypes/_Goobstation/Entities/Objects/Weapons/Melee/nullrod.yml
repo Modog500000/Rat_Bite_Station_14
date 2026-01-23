@@ -199,10 +199,11 @@
     damage:
       types:
         Heat: 10
-        Slash: 4
+        Slash: 7 #ratbite buff
         Holy: 10
     soundHit:
       path: /Audio/Weapons/Guns/Hits/energy_meat1.ogg
+ # - type: GrabbingItem Ratbite: What BOZO decided this was ever okay balance wise?
   - type: IgniteOnMeleeHit # emphasis on FLAMING GIFT!!
     fireStacks: 0.25
   - type: Cautery
@@ -228,7 +229,6 @@
   - type: UseDelay
     delay: 1
   - type: Prying
-  - type: GrabbingItem
 
 - type: entity
   parent: BaseNullrod
@@ -708,7 +708,7 @@
         Slash: 25
         Piercing: 15
         Holy: 10
-       
+
 - type: entity
   parent: BaseNullrod
   id: RatvarianSpear

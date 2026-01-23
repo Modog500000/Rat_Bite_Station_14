@@ -279,6 +279,12 @@
       steps: 1
       zeroVisible: true
     - type: Appearance
+    - type: FiringPin #Ratbite, mindshield restriction system
+    - type: Lock #Ratbite
+      locked: true
+    - type: AccessReader #Ratbite
+      access: [ [ "Security" ] ]
+
 
 - type: entity
   name: WT550 autorifle # Goobstation
@@ -338,6 +344,11 @@
     steps: 6
     zeroVisible: true
   - type: Appearance
+  - type: FiringPin #Ratbite, mindshield restriction system
+  - type: Lock #Ratbite
+    locked: true
+  - type: AccessReader #Ratbite
+    access: [ [ "Security" ] ]
   # Goobstation
   - type: Multishot
     missChance: 0.3

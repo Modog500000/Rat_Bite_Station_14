@@ -148,27 +148,39 @@
 
 #Ratbite
 - type: entityTable
-  id: CalmerAntagTable #Used for SqueakRat, holds ghostrole antags for now
+  id: RatbiteEventsTable #Used for SqueakRat, holds ghostrole antags for now
+  table: !type:AllSelector
+    children:
+    - id: SnakeSpawn
+    - id: MalignRiftSpawn # DeltaV
+    - id: FloorGoblinMidRound # Goobstation
+    - id: ClownGoblinMigration # Goobstation - New Midrounds
+    - id: RandomSentience
+    - id: SlimesSpawn
+    - id: MothroachSpawn # DeltaV
+    - id: MouseMigration
+    - id: VentClog
+
+- type: entityTable
+  id: LowImpactAntagTable #Used for SqueakRat modes
   table: !type:AllSelector
     children:
     - id: ClosetSkeleton
     - id: KingRatMigration
     - id: ParadoxCloneSpawn
-    - id: DerelictCyborgSpawn
-    - id: LoneAbductorSpawn
-    - id: DuoAbductorSpawn
     - id: BingleSpawn
+    - id: CockroachMigration
+    - id: GasLeak
+    - id: MouseMigration
+    - id: IonStorm # its calm like 90% of the time smh
 
 - type: entityTable
-  id: HeavierAntagTable #Used for SqueakRat, holds round changing antags
+  id: SusAntagTable #Used for SqueakRat, holds ghostrole antags for now
   table: !type:AllSelector
     children:
-    - id: ZombieOutbreak
-    - id: SleeperAgents
-    - id: HereticMidround #We should work on a better solution to adding heretics to squeakrat, HereticMidround does exsist.
-    - id: LoneOpsSpawn
-    - id: DragonSpawn
-    - id: NinjaSpawn
+    - id: Heretics
+    - id: Traitors
+    - id: Changelings
 
 # Ratbite Over
 
@@ -176,36 +188,36 @@
   id: BasicCalmEventsTable
   table: !type:AllSelector # we need to pass a list of rules, since rules have further restrictions to consider via StationEventComp
     children:
-    - id: AnomalySpawn
+ #   - id: AnomalySpawn
     - id: BluespaceArtifact
     - id: BluespaceLocker
-    - id: BreakerFlip
+ #   - id: BreakerFlip
     - id: BureaucraticError
     - id: ClericalError
     - id: CockroachMigration
     - id: GasLeak
-    - id: GreytideVirus
+ #   - id: GreytideVirus
     - id: IonStorm # its calm like 90% of the time smh
     - id: JobDistributionError
-    - id: KudzuGrowth
+ #   - id: KudzuGrowth
     - id: MassHallucinations
     - id: MimicVendorRule
     - id: MouseMigration
-    - id: PowerGridCheck
+ #   - id: PowerGridCheck Ratbite, This shit sucks and encourages lazy engi
     - id: RandomSentience
     - id: SlimesSpawn
-    - id: SolarFlare
+ #   - id: SolarFlare Ratbite, This shit also sucks
     - id: SnakeSpawn
-    - id: SpiderClownSpawn
+#    - id: SpiderClownSpawn
     - id: SpiderSpawn
     - id: VentClog
-    - id: TidemindDevelop # Goobstation - Tidemind
+#   - id: TidemindDevelop # Goobstation - Tidemind
     - id: MothroachSpawn # DeltaV
-    - id: DerelictCyborgSyndicateSpawn # Goobstation - usually calm
+ #   - id: DerelictCyborgSyndicateSpawn # Goobstation - usually calm
     - id: MalignRiftSpawn # DeltaV
     - id: FloorGoblinMidRound # Goobstation
     - id: ClownGoblinMigration # Goobstation - New Midrounds
-    - id: SantaClausSpawn # Goobstation, remove after new year
+ #   - id: SantaClausSpawn # Goobstation, remove after new year
 
 - type: entityTable
   id: BasicAntagEventsTable
@@ -220,15 +232,15 @@
     - id: SleeperAgents
     - id: HereticMidround # Goob
     - id: ChangelingMidround # Goob
-    - id: ZombieOutbreak
-    - id: LoneOpsSpawn
+ #   - id: ZombieOutbreak
+ #  - id: LoneOpsSpawn
     - id: DerelictCyborgSpawn
-    - id: BlobSpawn # Goobstation - Blob
-    - id: LoneAbductorSpawn # Shitmed - Starlight Abductors
-    - id: DuoAbductorSpawn # Shitmed - Starlight Abductors
+  #  - id: BlobSpawn # Goobstation - Blob
+  #  - id: LoneAbductorSpawn # Shitmed - Starlight Abductors
+  #  - id: DuoAbductorSpawn # Shitmed - Starlight Abductors
     - id: BingleSpawn #Goobstation - Bingle
-    - id: SlaughterDemonMidround # Goobstation - Slaughter Demon
-    - id: XenomorphsInfestation # WD EDIT
+  #  - id: SlaughterDemonMidround # Goobstation - Slaughter Demon
+    #- id: XenomorphsInfestation # WD EDIT
     #- id: GreyTideAntagMidround # Goobstation - New Midrounds
     #- id: SingulothKnightsMidround # Goobstation - New Midrounds
     #- id: DarkLordMidround # Goobstation - New Midrounds

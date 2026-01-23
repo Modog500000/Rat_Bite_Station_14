@@ -1,16 +1,24 @@
 # SPDX-FileCopyrightText: 2025 FloraMillhouse <no email, contact on discord.>
 - type: gamePreset
   id: SqueakRat
-  alias:
-    - johnratbite
-    - SqueakRat
-    - squeakrat
-    - florashitcode
-  name: squeakrat-title
+
+  name: SqueakRat
   showInVote: true
-  description: squeakrat-description
+  description: The basic Ratbite experience
   rules:
     - PermaBrig # Needed
-    - BasicRoundstartVariation
-    - CalmerAntagStationScheduler
-    - CalmerStationEventScheduler
+    - RatbiteBasicEventsScheduler
+    - LowImpactAntagStationScheduler
+
+- type: gamePreset
+  id: SusRat
+  name: SusRat
+  showInVote: true
+  description: The antag could be any one of us...He could be you!
+  rules:
+    - PermaBrig # Needed
+    - RatbiteBasicEventsScheduler
+    - SusStationEventScheduler
+
+
+

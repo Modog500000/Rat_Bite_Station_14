@@ -85,6 +85,8 @@
   icon: "JobIconPassenger"
   supervisors: job-supervisors-everyone
   goobcoins: 20 #Goob content
+  access:
+  - Maintenance
   special: # Goobstation
   - !type:AddComponentSpecial
     components:

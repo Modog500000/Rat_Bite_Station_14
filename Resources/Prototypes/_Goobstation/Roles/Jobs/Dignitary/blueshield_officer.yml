@@ -97,6 +97,8 @@
     - Flash
     - ClothingMaskGasSecurity
     - CombatKnife
+    - BlueshieldUndeterminedHardsuit
+    - BlueshieldUndeterminedWeapon
 
 - type: chameleonOutfit
   id: BlueshieldOfficerChameleonOutfit
