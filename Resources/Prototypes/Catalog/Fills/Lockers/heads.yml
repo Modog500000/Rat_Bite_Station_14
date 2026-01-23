@@ -166,7 +166,7 @@
     - id: RubberStampApproved
     - id: RubberStampDenied
     - id: RubberStampQm
-    - id: LavalandShuttleConsoleCircuitboard # Goobstation - Mining Shuttle Board
+   # - id: LavalandShuttleConsoleCircuitboard -RATBITE: Not sneaking past our lavaland portal
     - id: AstroNavCartridge
     - id: CargoTechFabCircuitboard # Goobstation - Cargo Techfab
     - id: MailTeleporterMachineCircuitboard # GoobStation port of DeltaV mail

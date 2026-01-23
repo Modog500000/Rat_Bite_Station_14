@@ -62,8 +62,6 @@
     - id: NitrogenTankFilled
     - id: OmnimedTool
     - id: HandheldCrewMonitorBSO
-    - id: BlueshieldUndeterminedWeapon
-    - id: BlueshieldUndeterminedHardsuit
     - id: FlashlightSeclite
 
 - type: entity

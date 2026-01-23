@@ -436,7 +436,7 @@ public sealed class HealingSystem : EntitySystem
                     continue;
                 if (TraumaSystem.TraumasBlockingHealing.Any(traumaType => _trauma.HasWoundableTrauma(targetedWoundable, traumaType, woundableComp2, false)))
                 {
-                    canHeal = false;
+                    canHeal = true;
 
                     if (!healedBleedLevel)
                     {

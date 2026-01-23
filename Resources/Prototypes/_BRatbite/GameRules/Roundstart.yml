@@ -2,21 +2,21 @@
 
 
 #Ratbite start
-#The below controls Squeakrat.
+
 
 - type: entity
-  id: CalmerAntagStationScheduler #used for SqueakRat, controls ghost role antags at the moment.
+  id: LowImpactAntagStationScheduler #used for SqueakRat modes
   parent: BaseGameRule
   components:
   - type: BasicStationEventScheduler
     scheduledGameRules: !type:NestedSelector
-      tableId: CalmerAntagTable
+      tableId: LowImpactAntagTable
     minMaxEventTiming:
       min: 250
       max: 1000
 
 - type: entity
-  id: HeavierAntagStationScheduler #used for SqueakRat, controls things like HereticMidround and SleeperAgents.
+  id: HeavierAntagStationScheduler #used for SqueakRat modes
   parent: BaseGameRule
   components:
   - type: BasicStationEventScheduler
@@ -28,14 +28,26 @@
 
 
 - type: entity
-  id: CalmerStationEventScheduler #used for SqueakRat, controls station events.
+  id: RatbiteBasicEventsScheduler #used for SqueakRat modes, controls basic events
   parent: BaseGameRule
   components:
   - type: BasicStationEventScheduler
     scheduledGameRules: !type:NestedSelector
-      tableId: BasicCalmEventsTable
+      tableId: RatbiteEventsTable
     minMaxEventTiming:
       min: 300
       max: 700
-#Squeakrat end
+
+- type: entity
+  id: SusStationEventScheduler #used for SusRat, controls station events.
+  parent: BaseGameRule
+  components:
+  - type: BasicStationEventScheduler
+    scheduledGameRules: !type:NestedSelector
+      tableId: SusAntagTable
+    minMaxEventTiming:
+      min: 300
+      max: 700
+
+
 #Ratbite end

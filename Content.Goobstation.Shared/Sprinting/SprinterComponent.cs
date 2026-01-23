@@ -39,7 +39,7 @@ public sealed partial class SprinterComponent : Component
     ///     How much stamina is drained per second?
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float StaminaDrainRate = 9f;
+    public float StaminaDrainRate = 24f; // Ratbite sprint kill
 
     /// <summary>
     ///     By how much do we multiply stamina recovery while sprinting?
@@ -61,7 +61,7 @@ public sealed partial class SprinterComponent : Component
     ///     How much do we multiply sprint speed?
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float SprintSpeedMultiplier = 1.45f;
+    public float SprintSpeedMultiplier = 1.25f;
 
     /// <summary>
     ///     How long do we have to wait between sprints?

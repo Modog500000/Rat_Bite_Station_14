@@ -71,7 +71,7 @@
   rules:
     - MeteorSwarmScheduler
     - RampingStationEventScheduler
-    - SpaceTrafficControlEventScheduler
+   # - SpaceTrafficControlEventScheduler
     - SpaceTrafficControlFriendlyEventScheduler
     - BasicRoundstartVariation
 
@@ -87,7 +87,7 @@
   rules:
     - KesslerSyndromeScheduler
     - RampingStationEventScheduler
-    - SpaceTrafficControlEventScheduler
+  #  - SpaceTrafficControlEventScheduler
     - BasicRoundstartVariation
 
 - type: gamePreset
@@ -110,7 +110,7 @@
     - Wizard
     - RampingStationEventScheduler
     - Changeling # Goobstation - changeling playtest
-    - SpaceTrafficControlEventScheduler
+  #  - SpaceTrafficControlEventScheduler
     - BasicRoundstartVariation
 
 - type: gamePreset
@@ -138,7 +138,7 @@
     - MeteorSwarmMildScheduler # Goob Edit
     - MeteorSwarmScheduler # Goob edit
     - RampingStationEventScheduler
-    - SpaceTrafficControlEventScheduler
+  #  - SpaceTrafficControlEventScheduler
     - SpaceTrafficControlFriendlyEventScheduler
     - BasicRoundstartVariation
     - Changeling # Goobstation - changeling playtest
@@ -155,20 +155,18 @@
   rules:
   - BasicStationEventScheduler
   - MeteorSwarmScheduler
-  - SpaceTrafficControlEventScheduler
+#  - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
 
 - type: gamePreset
   id: Greenshift
   alias:
-  - greenshift
-  - shittersafarideluxeedition
-  name: greenshift-title
-  showInVote: false #4boring4vote
-  description: greenshift-description
+  - NothingHappens
+  name: NothingEverHappens
+  showInVote: true #One of the basic modes for ratbite, needed if too many self antags.
+  description: Nothing ever happens... Unless you (or an admin) make it happen!
   rules:
-  - SpaceTrafficControlFriendlyEventScheduler
-  - BasicRoundstartVariation
+    - RatbiteBasicEventsScheduler #Ratbite changed
 
 - type: gamePreset
   id: Secret
@@ -192,7 +190,7 @@
   rules:
     - BasicStationEventScheduler
     - MeteorSwarmScheduler
-    - SpaceTrafficControlEventScheduler
+  #  - SpaceTrafficControlEventScheduler
     - BasicRoundstartVariation
 
 - type: gamePreset
@@ -231,7 +229,7 @@
   - SubGamemodesRule
   - BasicStationEventScheduler
   - MeteorSwarmScheduler
-  - SpaceTrafficControlEventScheduler
+ # - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
 
 - type: gamePreset
@@ -242,7 +240,7 @@
   name: death-match-title
   description: death-match-description
   maxPlayers: 15
-  showInVote: true
+  showInVote: false
   supportedMaps: DeathMatchMapPool
   rules:
     - DeathMatch31
@@ -260,7 +258,7 @@
   - SubGamemodesRule
   - BasicStationEventScheduler
   - MeteorSwarmScheduler
-  - SpaceTrafficControlEventScheduler
+#  - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
 
 - type: gamePreset
@@ -278,7 +276,7 @@
   - SubGamemodesRule
   - BasicStationEventScheduler
   - MeteorSwarmScheduler
-  - SpaceTrafficControlEventScheduler
+ # - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
 
 - type: gamePreset
@@ -296,7 +294,7 @@
   - Zombie
   - BasicStationEventScheduler
   - MeteorSwarmScheduler
-  - SpaceTrafficControlEventScheduler
+#  - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
 
 - type: gamePreset
@@ -312,5 +310,5 @@
   - Zombie
   - BasicStationEventScheduler
   - KesslerSyndromeScheduler
-  - SpaceTrafficControlEventScheduler
+#  - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation

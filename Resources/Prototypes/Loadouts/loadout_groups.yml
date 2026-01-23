@@ -400,6 +400,13 @@
   - GreyJumpsuit
   - GreyJumpskirt
   - AncientJumpsuit
+# ratbite adds
+  - MercJumpsuit
+  - MercGreenJumpsuit
+  - MercBlueJumpsuit
+  - FreakPants
+
+#ratbite end
   - RainbowJumpsuit
   - RainbowJumpskirt
  # goob changes start
@@ -422,11 +429,20 @@
  # goob changes end
 
 - type: loadoutGroup
+  id: PassengerHead
+  name: Passenger Head
+  minLimit: 0
+  loadouts:
+  - MercBeret
+
+
+- type: loadoutGroup
   id: PassengerFace
   name: loadout-group-passenger-mask
   minLimit: 0
   loadouts:
   - PassengerFace
+  - MercBandana
 
 - type: loadoutGroup
   id: PassengerGloves
@@ -434,6 +450,7 @@
   minLimit: 0
   loadouts:
   - PassengerGloves
+  - FingerlessMercGloves
 
 - type: loadoutGroup
   id: CommonBackpack
@@ -1275,6 +1292,7 @@
   name: loadout-group-warden-head
   minLimit: 0
   loadouts:
+  - WardenHelmet #Ratbite
   - WardenHead
   - WardenBeret
 
@@ -1289,6 +1307,7 @@
   id: WardenOuterClothing
   name: loadout-group-warden-outerclothing
   loadouts:
+  - WardenArmor #Ratbite
   - WardenCoat
   - WardenArmoredWinterCoat
   - WardenCoatBlue #goob
@@ -1310,6 +1329,7 @@
   loadouts:
   - SecurityJumpsuit
   - SecurityJumpskirt
+  - SecurityJumpsuitClassic # Ratbite
   - SecurityJumpsuitGrey
   - SecurityJumpskirtGrey
   - SeniorOfficerJumpsuit
