@@ -29,7 +29,7 @@ jobs:
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
 
-      - name: Sync Branch
+      - name: Sync Branch and PR
         env:
           GH_TOKEN: ${{ secrets.BOT_TOKEN }}
         run: |
@@ -46,10 +46,6 @@ jobs:
 
           git push -f origin "$SYNC_BRANCH"
 
-      - name: Create PR
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
           PR_COUNT=$(gh pr list --head "$SYNC_BRANCH" --base "$TARGET_BRANCH" --json state --jq 'length')
 
           if [ "$EXISTING_PR" = "OPEN" ]; then
