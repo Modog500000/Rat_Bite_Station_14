@@ -50,7 +50,8 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          EXISTING_PR=$(gh pr list --head "$SYNC_BRANCH" --base "$TARGET_BRANCH" --json state --jq '.[0].state')
+          PR_COUNT=$(gh pr list --head "$SYNC_BRANCH" --base "$TARGET_BRANCH" --json state --jq 'length')
+
           if [ "$EXISTING_PR" = "OPEN" ]; then
             echo "An open PR for this sync branch already exists. Updated the branch."
           else
