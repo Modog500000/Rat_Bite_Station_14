@@ -30,8 +30,8 @@ jobs:
           git config --global user.email "actions@github.com"
 
       - name: Sync Branch and Create PR
-        env:
-          GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
+        with:
+          token: ${{ secrets.BOT_TOKEN }}
         run: |
           git remote add upstream "$REMOTE_URL"
 
