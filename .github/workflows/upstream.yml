@@ -29,7 +29,7 @@ jobs:
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
 
-      - name: Sync Branch and Create PR
+      - name: Sync Branch
         env:
           GH_TOKEN: ${{ secrets.BOT_TOKEN }}
         run: |
@@ -46,8 +46,9 @@ jobs:
 
           git push -f origin "$SYNC_BRANCH"
 
+      - name: Create PR
+        run: |
           EXISTING_PR=$(gh pr list --head "$SYNC_BRANCH" --base "$TARGET_BRANCH" --json state --jq '.[0].state')
-
           if [ "$EXISTING_PR" = "OPEN" ]; then
             echo "An open PR for this sync branch already exists. Updated the branch."
           else
