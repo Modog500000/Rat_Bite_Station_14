@@ -23,13 +23,15 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          token: ${{ secrets.BOT_TOKEN }}
+
       - name: Configure Git
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
 
       - name: Sync Branch and Create PR
+        env:
+          GH_TOKEN: ${{ secrets.BOT_TOKEN }}
         run: |
           git remote add upstream "$REMOTE_URL"
 
