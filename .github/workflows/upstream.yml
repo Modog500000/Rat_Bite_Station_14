@@ -58,6 +58,6 @@ jobs:
             --title "Automatic Upstream Merge" \
             --body "Automated sync from $REMOTE_URL ($REMOTE_BRANCH) into $TARGET_BRANCH." \
             --head "$REPO_OWNER:$SYNC_BRANCH" \
-            --base "$TARGET_BRANCH"
+            --base "$REPO_OWNER:$TARGET_BRANCH"
             exit 0
           fi
