@@ -618,9 +618,9 @@
     animation: WeaponArcThrust
     soundHit:
       path: /Audio/Weapons/pierce.ogg
-  ##- type: CombatDoAfter - This is just problematic and unfun
-  ##  trigger: !type:CombatSyringeTriggerEvent
-  ##  breakOnDamage: true
+  - type: CombatDoAfter #Ratbite, this is fucking awesome and should stay
+    trigger: !type:CombatSyringeTriggerEvent
+    breakOnDamage: true
   - type: Projectile
     deleteOnCollide: false
     onlyCollideWhenShot: true
