@@ -50,6 +50,7 @@ jobs:
 
           if [ "$EXISTING_PR" = "OPEN" ]; then
             echo "An open PR already exists and has been updated by the push."
+            exit 0
           else
             REPO_OWNER=$(gh repo view --json owner --jq '.owner.login')
 
@@ -58,4 +59,5 @@ jobs:
             --body "Automated sync from $REMOTE_URL ($REMOTE_BRANCH) into $TARGET_BRANCH." \
             --head "$REPO_OWNER:$SYNC_BRANCH" \
             --base "$TARGET_BRANCH"
+            exit 0
           fi
